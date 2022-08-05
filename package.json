@@ -1,7 +1,7 @@
 {
   "name": "prof",
   "version": "0.1.0",
-  "homepage": "https://github.com/kimmo888/CarlosCastro",
+  "homepage": "https://kimmo888.github.io/CarlosCastro/",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.18.6",
