@@ -8,7 +8,7 @@ import Sass from '../images/Logos-Tech/sass.png';
 import Webpack from '../images/Logos-Tech/webpack.png';
 import Rc from '../images/Logos-Tech/react.png';
 import Gimp from '../images/Logos-Tech/GIMP.png';
-import InkScape from '../images/Logos-Tech/inkscape.png';
+import InkScape from '../images/Logos-Tech/Inkscape.png';
 import Blender from '../images/Logos-Tech/blender.png';
 import Git from '../images/Logos-Tech/Git.png';
 import Node from '../images/Logos-Tech/nodejs.png';
