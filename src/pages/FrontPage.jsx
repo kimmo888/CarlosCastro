@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Front_Page.scss';
 import Foto from '../images/Foto1.png';
-import Avatar from '../images/Avatar.png';
+import Avatar from '../images/Images02.png';
 
 const FrontPage = () => {
     return (
