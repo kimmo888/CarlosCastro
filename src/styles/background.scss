@@ -1,0 +1,113 @@
+@import './Var.scss';
+
+.containerMaster{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #333336;
+}
+.uno{
+    --i:31;
+}
+.dos{
+    --i:12;
+}
+.tres{
+    --i:24;
+}
+.cuatro{
+    --i:10;
+}
+.cinco{
+    --i:54;
+}
+.seis{
+    --i:23;
+}
+.siete{
+    --i:18;
+}
+.ocho{
+    --i:16;
+}
+.nueve{
+    --i:19;
+}
+.diez{
+    --i:29;
+}
+.once{
+    --i:33;
+}
+.doce{
+    --i:11;
+}
+.trece{
+    --i:25;
+}
+.catorce{
+    --i:33;
+}
+.quince{
+    --i:27;
+}
+.dieciseis{
+    --i:11;
+}
+.diecisiete{
+    --i:15;
+}
+.dieciocho{
+    --i:38;
+}
+.diecinueve{
+    --i:27;
+}
+.veinte{
+    --i:32;
+}
+.numbers{
+    position: relative;
+    display: flex;
+    z-index: -10;
+}
+.numbers span {
+    position: relative;
+
+/*     background: #4fc3dc;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc; */
+    animation: animate 8s linear infinite;
+    text-align: center;
+    animation-delay: calc(130s / var(--i));
+}
+/* .numbers span:nth-child(even) {
+
+} */
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-30vh) scale(1);
+    }
+}
+.numbers span p {
+    font-size: 30px;
+    color: $colorBG;
+    text-shadow: 0 0 30px #4fc3dc,
+    0 0 50px #4fc3dc,;
+}
+@media screen and (max-width: 600px){
+    .containerMaster{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+
+}

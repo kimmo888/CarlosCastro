@@ -1,0 +1,85 @@
+.conteinerTriangulo{
+    position: relative;
+    top: 300px;
+    margin: auto;
+    width: 70%;
+    max-width: 380px;
+    height: 260px;
+    z-index: 10;
+    background-color: rgba(12, 25, 44, 0.8);
+    border-radius: 30px;
+}
+.conteinerTriangulo h1,h2{
+    text-align: center;
+    color: aquamarine;
+}
+.form-Triangulo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+    ". . ."
+    "L1 L1 i1"
+    "L2 L2 i2"
+    "L3 L3 i3"
+    "L4 L4 i4"
+    "bt1 bt2 bt3";
+}
+.Label-uno{
+    grid-area: L1;
+}
+.Label-dos{
+    grid-area: L2;
+}
+.Label-tres{
+    grid-area: L3;
+}
+.Label-cuatro{
+    grid-area: L4;
+}
+.Input-uno{
+    grid-area: i1;
+    justify-self: end;
+}
+.Input-dos{
+    grid-area: i2;
+    justify-self: end;
+}
+.Input-tres{
+    grid-area: i3;
+    justify-self: end;
+}
+.Input-cuatro{
+    grid-area: i4;
+    justify-self: end;
+}
+.form-Triangulo label{
+    color: white;
+    font-size: 1.3rem;
+}
+.form-Triangulo input{
+    width: 50px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: aquamarine;
+}
+.bt1{
+    grid-area: bt1;
+}
+.bt2{
+    grid-area: bt2;
+}
+.bt3{
+    grid-area: bt3;
+}
+.p-text p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.form-Triangulo button{
+    border-radius: 15px;
+    border: 1px solid aquamarine;
+    background-color: transparent;
+    color: aquamarine;
+}

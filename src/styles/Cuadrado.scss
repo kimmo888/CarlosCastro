@@ -1,0 +1,52 @@
+.conteinerCuadrado{
+    position: relative;
+    top: 320px;
+    margin: auto;
+    width: 70%;
+    max-width: 380px;
+    height: 150px;
+    z-index: 10;
+    background-color: rgba(12, 25, 44, 0.8);
+    border-radius: 30px;
+}
+
+.formCuadrado{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "L1 L1 i1"
+    "bt1 bt2 bt3";
+}
+.Input-uno{
+    grid-area: i1;
+    justify-self: end;
+}
+.p-textCuadrado{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.formCuadrado button{
+    border-radius: 15px;
+    border: 1px solid aquamarine;
+    background-color: transparent;
+    color: aquamarine;
+}
+.h1-cuadrado, .formCuadrado h2{
+    text-align: center;
+    color: aquamarine;
+}
+.formCuadrado label{
+    color: white;
+    font-size: 1.3rem;
+}
+.formCuadrado input{
+    width: 50px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: aquamarine;
+}
+.Label-Cuadrado{
+    grid-area: L1;
+}

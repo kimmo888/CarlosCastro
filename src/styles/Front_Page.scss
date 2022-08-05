@@ -1,0 +1,235 @@
+@import './Var.scss';
+
+.Container{
+    //position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    height: 90vh;
+    z-index: 10;
+    background-color: rgba(51, 51, 54, 0.2);
+    opacity: 0.9;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+.Text-Dev{
+    position: relative;
+    width: 450px;
+    height: 300px;
+    margin: 50px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #BFCDFF; */
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+}
+.Text-Dev h1{
+    font-size: 6rem;
+    color: $colorText;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 13px 4px 30px $colorBG;
+    z-index: 10;
+    @media screen and (max-width: 320px){
+        font-size: 5rem;
+    }
+}
+.Text-Dev h2{
+    font-size: 5rem;
+    color: $colorBG;
+    z-index: 10;
+    text-shadow: 4px 2px 30px $colorBG;
+    @media screen and (max-width: 320px){
+        font-size: 3rem;
+    }
+}
+.Container-Card{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    z-index: 10;
+    background: #7f787c;
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    &:hover{
+        height: 400px;
+    }
+    @media screen and (max-width: 370px){
+        width: 300px;
+        height: 150px;
+    }
+}
+
+.Container-Card:hover .Card .Front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.Container-Card:hover .Card .Back{
+    transform: perspective(500px) rotateY(360deg);
+}
+.Card{
+    position: absolute;
+    left: 50%;
+    top: -70px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+    @media screen and (max-width: 370px){
+        width: 170px;
+        height: 170px;
+    }
+    @media screen and (max-width: 320px){
+        width: 150px;
+        height: 150px;
+    }
+}
+.Card figure{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: 1s;
+    overflow: hidden;
+}
+.Card .Front{
+    background: $colorBG;
+    transform: perspective(500px) rotateY(0deg);
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    @media screen and (max-width: 370px){
+        width: 170px;
+    }
+    @media screen and (max-width: 320px){
+        width: 150px;
+    }
+}
+.Foto{
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    @media screen and (max-width: 370px){
+        width: 170px;
+    }
+    @media screen and (max-width: 320px){
+        width: 150px;
+    }
+
+}
+.Card .Back{
+    background-color: $colorBG;
+    transform: perspective(500px) rotateY(180deg);
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    @media screen and (max-width: 370px){
+        width: 170px;
+    }
+    @media screen and (max-width: 320px){
+        width: 150px;
+    }
+}
+.Avatar{
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    @media screen and (max-width: 370px){
+        width: 170px;
+    }
+    @media screen and (max-width: 320px){
+        width: 150px;
+    }
+}
+.Container-Card .Content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Container-Card .Content .Details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(100px);
+}
+.Container-Card:hover .Content .Details{
+    transform: translateY(0px);
+}
+.Container-Card .Content .Details h2{
+    position: relative;
+    top: -40px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $colorText;
+    transition: 0.5s;
+    visibility: visible;
+    @media screen and (max-width: 370px){
+        font-size: 2.5rem;
+        top: -50px;
+    }
+    @media screen and (max-width: 320px){
+        font-size: 2rem;
+        top: -60px;
+    }
+
+}
+.Container-Card:hover .Content .Details h2{
+    transform: translateY(170px);
+}
+.Container-Card .Content .Details h2 span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $colorText;
+    opacity: 0.8;
+}
+.Container-Card .Content .Details .Kimmo p{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    visibility: hidden;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $colorBG;
+    transition: 0.1s;
+}
+.Container-Card .Content .Details h3{
+    position: relative;
+    top: -40px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $colorText;
+    visibility: hidden;
+    opacity: 0.5;
+    @media screen and (max-width: 320px){
+        top:-40px;
+        font-size: 1.5rem;
+    }
+}
+.Container-Card:hover .Content .Details h3{
+    transform: translateY(170px);
+    visibility: visible;
+    transition: 0.5s;
+}
+.Container-Card:hover .Content .Details .Kimmo p{
+    font-size: 3rem;
+    font-weight: 700;
+    color: $colorText;
+    visibility: visible;
+    transition-delay: 0.2s;
+}

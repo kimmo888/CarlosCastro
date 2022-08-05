@@ -1,0 +1,95 @@
+@import 'Var.scss';
+.list{
+    position: relative;
+    margin-top: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titleImages{
+        z-index: 100;
+        top: 20px;
+        color: $colorText;
+        font-size: 5rem;
+        text-shadow: 13px 4px 30px $colorBG;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+}
+.wrapper picture{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: $colorBG;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: 0 10px 7px 10px;
+    //margin-bottom: 7px;
+    @media screen and (max-width: 360px) {
+        width: 100px;
+        height: 100px;
+    }
+    h2{
+        z-index: 100;
+        position: absolute;
+        font-size: 3rem;
+        visibility: hidden;
+        color: $colorText;
+        text-shadow: 13px 4px 30px $colorText;
+    }
+    &:hover{
+        height: 200px;
+        transition: 0.5s;
+        visibility: visible;
+        h2{
+            visibility: visible;
+            transition: 0.5s;
+            bottom: 10px;
+        }
+        @media screen and (max-width: 360px) {
+            width: 100px;
+            height: 100px;
+            h2{
+                font-size: 1.5rem;
+            }&:hover{
+                width: 100px;
+                height: 120px;
+            }
+        }
+    }
+}
+picture.small{
+    width: 100px;
+    height: 100px;
+    &:hover {
+        height: 150px;
+        h2{
+            visibility: visible;
+            transition: 0.5s;
+            bottom: 10px;
+        }
+    }
+}
+picture.large{
+    width: 200px;
+    height: 200px;
+    &:hover {
+        height: 350px;
+        h2{
+            visibility: visible;
+            transition: 0.5s;
+            bottom: 10px;
+        }
+    }
+}
+.wrapper img {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    @media screen and (max-width: 360px) {
+        width: 50px;
+    }
+}
