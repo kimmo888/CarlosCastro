@@ -2,7 +2,26 @@
 
 
 .ContenedorAboutMy{
+    position: relative;
+    margin: 200px auto;
+    width: 100%;
     h1 {
+        text-align : center;
         color: $colorText;
+        font-size: 5rem;
+        text-shadow: 13px 4px 30px $colorBG;
+        margin-bottom: 50px;
     }
+    .Social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 13px 4px 30px $colorBG;
+        }
+    }
+
 }

@@ -9,7 +9,7 @@ import AboutMy from './AboutMy';
 const Home = () => {
     return (
         <div className='ContainerHome'>
-            <Background />
+            {/* <Background /> */}
             <FrontPage />
             <AboutMy />
             <Technologies />
