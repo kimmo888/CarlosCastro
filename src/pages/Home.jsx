@@ -4,14 +4,14 @@ import FrontPage from './FrontPage';
 import Project from './Project';
 import Technologies from './Technologies';
 import '../styles/Home.scss';
-import AboutMy from './AboutMy';
+import AboutMe from './AboutMe';
 
 const Home = () => {
     return (
         <div className='ContainerHome'>
             <Background />
             <FrontPage />
-            <AboutMy />
+            <AboutMe />
             <Technologies />
             <Project />
         </div>

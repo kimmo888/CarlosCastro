@@ -6,7 +6,7 @@ import In from '../images/Svg/in.svg';
 const AboutMy = () => {
     return (
         <div className='ContenedorAboutMy'>
-            <h1 className='TitleAbout'>About My</h1>
+            <h1 className='TitleAbout'>About Me</h1>
             <div className='AboutMy'>
                 <figure className='Social'>
                 <a href='https://github.com/kimmo888' target={"_blank"} rel='noreferrer' ><img src={GitHub} alt='GitHub' /></a>
