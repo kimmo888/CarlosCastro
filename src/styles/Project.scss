@@ -1,0 +1,57 @@
+@import './Var.scss';
+
+.Master{
+    width: 100vw;
+    .Title{
+        text-align: center;
+        margin: 30px auto;
+        width: 100%;
+        font-size: 4em;
+        color: $colorText;
+        text-shadow: 13px 4px 30px $colorBG;
+    }& :hover {
+        color: #fff;
+        text-shadow: 13px 4px 30px $colorText;
+    }
+    .Gift{
+        margin: auto;
+        @media screen and (max-width: 360px){
+            width: 320px;
+        }
+    }
+    .TitleApp {
+        color: $colorText;
+        text-shadow: 4px 4px 10px $colorBG;
+        font-size: 2em;
+        text-align: center;
+    }
+    .Gift-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto;
+    }
+}
+.Container-gifts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 10px 0 10px; ;
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin:auto;
+    } img {
+        width: 90%;
+        opacity: 0.8;
+    } p {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 10px 0;
+        color: $colorText;
+        text-shadow: none;
+    }
+}
