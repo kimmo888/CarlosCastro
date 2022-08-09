@@ -84,9 +84,6 @@
     text-align: center;
     animation-delay: calc(130s / var(--i));
 }
-/* .numbers span:nth-child(even) {
-
-} */
 @keyframes animate {
     0%{
         transform: translateY(100vh) scale(0);
@@ -96,6 +93,8 @@
     }
 }
 .numbers span p {
+    position: relative;
+    top: -50px;
     font-size: 30px;
     color: $colorBG;
     text-shadow: 0 0 30px #4fc3dc,
