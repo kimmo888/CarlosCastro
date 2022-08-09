@@ -1,6 +1,6 @@
 @import 'Var.scss';
 .list{
-    position: relative;
+    //position: relative;
     margin-top: 300px;
     width: 100%;
     display: flex;
@@ -14,6 +14,9 @@
         text-shadow: 13px 4px 30px $colorBG;
         font-weight: 500;
         margin-bottom: 50px;
+    }& :hover {
+        color: #fff;
+        text-shadow: 13px 4px 30px $colorText;
     }
 }
 .wrapper picture{

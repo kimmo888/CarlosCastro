@@ -28,6 +28,10 @@
     font-weight: bold;
     text-align: center;
     z-index: 10;
+    & :hover {
+        color: #fff;
+        text-shadow: 13px 4px 30px $colorText;
+    }
 }
 .Text-Dev h1{
     font-size: 6rem;
@@ -36,6 +40,7 @@
     text-align: center;
     text-shadow: 13px 4px 30px $colorBG;
     z-index: 10;
+    cursor: pointer;
     @media screen and (max-width: 320px){
         font-size: 5rem;
     }
@@ -59,6 +64,7 @@
     border-radius: 30px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
+    cursor: pointer;
     &:hover{
         height: 400px;
     }

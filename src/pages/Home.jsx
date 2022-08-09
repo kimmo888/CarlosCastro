@@ -3,13 +3,14 @@ import Background from './Background';
 import FrontPage from './FrontPage';
 import Project from './Project';
 import Technologies from './Technologies';
+import '../styles/Home.scss';
 
 const Home = () => {
     return (
-        <div>
-            {/* <Background />
+        <div className='ContainerHome'>
+            <Background />
             <FrontPage />
-            <Technologies /> */}
+            <Technologies />
             <Project />
         </div>
     )
