@@ -6,12 +6,13 @@ import In from '../images/Svg/in.svg';
 const AboutMy = () => {
     return (
         <div className='ContenedorAboutMy'>
-            <h1>About My</h1>
+            <h1 className='TitleAbout'>About My</h1>
             <div className='AboutMy'>
                 <figure className='Social'>
-                    <img src={GitHub} alt='GitHub' />
-                    <img src={In} alt='GitHub' />
+                <a href='https://github.com/kimmo888' target={"_blank"} rel='noreferrer' ><img src={GitHub} alt='GitHub' /></a>
+                <a href='https://www.linkedin.com/in/carlos-augusto-castro-corrales-782211220/' target={"_blank"} rel='noreferrer' ><img src={In} alt='GitHub' /> </a>
                 </figure>
+                <p className='My-Text'> aca va la info de mi descripción</p>
             </div>
             <p></p>
         </div>

@@ -5,23 +5,42 @@
     position: relative;
     margin: 200px auto;
     width: 100%;
-    h1 {
+    .TitleAbout{
         text-align : center;
         color: $colorText;
         font-size: 5rem;
         text-shadow: 13px 4px 30px $colorBG;
-        margin-bottom: 50px;
+        margin-bottom: 50px
+    }& :hover {
+        color: #fff;
+        text-shadow: 13px 4px 30px $colorText;
     }
     .Social{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        border-radius: 50%;
+        margin-bottom: 50px;
         img{
-            width: 100px;
+            width: 50px;
             border-radius: 50%;
             box-shadow: 13px 4px 30px $colorBG;
+        }& :hover{
+            box-shadow: 13px 4px 30px #fff;
+            border-radius: 50%;
         }
     }
 
+}
+.AboutMy p {
+    text-align: center;
+    font-size: 2.5em;
+    color: $colorText;
+    margin-bottom: 50px;
+    text-shadow: none;
+}
+.My-Text:hover {
+    color: $colorText;
+    text-shadow: none;
 }
