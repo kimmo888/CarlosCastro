@@ -5,6 +5,7 @@
     width: 100vw;
     margin: 200px auto 100px;
     z-index: 100;
+    overflow-x: hidden;
     .Title{
         text-align: center;
         margin: 30px auto;
@@ -44,6 +45,17 @@
         text-shadow: none;
         @media screen and (max-width: 360px){
             font-size: 1.6em;
+            font-weight: 700;
+        }
+    } .text-project{
+        text-align: center;
+        margin: 5px auto 0;
+        font-size: 2em;
+        font-weight: 500;
+        color: $colorText;
+        text-shadow: none;
+        @media screen and (max-width: 360px){
+            font-size: 1.2em;
             font-weight: 700;
         }
     }

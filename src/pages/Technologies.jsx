@@ -19,7 +19,7 @@ const Technologies = () => {
 
     return (
         <div className='list'>
-            <span className='titleImages'>Software</span>
+            <h1 className='titleImages'>Mis Conocimientos</h1>
             <div className='wrapper'>
                 <div className='Container' >
                     <CardExtends img={Html} text={'html5'}/>

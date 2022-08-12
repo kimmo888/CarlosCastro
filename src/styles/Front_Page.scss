@@ -205,8 +205,12 @@
     opacity: 0.8;
 }
 .Container-Card .Content .Details .Kimmo p{
-    position: relative;
-    top: -20px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     text-align: center;
     visibility: hidden;
     font-size: 3rem;
@@ -238,4 +242,32 @@
     color: $colorText;
     visibility: visible;
     transition-delay: 0.2s;
+}
+.Social-Icons{
+    width: 90%;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    visibility: hidden;
+    transition: 0.12s;
+    img{
+        width: 50px;
+        border-radius: 50%;
+        box-shadow: 13px 4px 30px $colorBG;
+    }& :hover{
+        box-shadow: 13px 4px 30px #fff;
+        border-radius: 50%;
+    }
+}
+.Container-Card:hover .Social-Icons{
+    visibility: visible;
 }

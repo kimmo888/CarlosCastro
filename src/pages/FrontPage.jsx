@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/Front_Page.scss';
 import Foto from '../images/Foto1.png';
 import Avatar from '../images/Images02.png';
+import GitHub from '../images/Svg/github.svg';
+import In from '../images/Svg/in.svg';
 
 const FrontPage = () => {
     return (
@@ -24,6 +26,10 @@ const FrontPage = () => {
                         <div className='Kimmo'>
                             <p>Kimmo888</p>
                         </div>
+                        <figure className='Social-Icons'>
+                            <a href='https://github.com/kimmo888' target={"_blank"} rel='noreferrer' ><img src={GitHub} alt='GitHub' /></a>
+                            <a href='https://www.linkedin.com/in/carlos-augusto-castro-corrales-782211220/' target={"_blank"} rel='noreferrer' ><img src={In} alt='GitHub' /> </a>
+                        </figure>
                         <h2>Carlos A. Castro</h2>
                         <h3>Front-End Developer</h3>
                         <div className='actionBtn'>
